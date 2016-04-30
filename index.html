@@ -37,7 +37,8 @@
             
           <div class="caption">
               <h3> {{name}} </h3>
-		<table class="table table-condensed">
+		
+		<table class="table table-condensed table-striped">
 			<thead>
 				<th>Name</th>
 				<th>Description</th>
@@ -49,8 +50,8 @@
 				<tr>
 				<td> {{name}} </td>
 				<td> {{description}} </td>
-				<td><img src={{image1}} class="img-thumbnail"/></td>
-				<td><img src={{image2}} class="img-thumbnail"/></td>
+				<td><img src={{image1}} class="img-rounded" width="200"/></td>
+				<td><img src={{image2}} class="img-rounded" width="200"/></td>
 				</tr>
 			{{/each}}
 			</tbody>
