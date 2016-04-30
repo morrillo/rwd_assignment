@@ -23,11 +23,45 @@
 		<div class="page-header">
 			<h1>Responsive Web Design - Final Assignment</h1>
 		</div>
+
+	 <!-- the content section is empty as we will fill it 
+        	    via javascript and templates -->
+		<div id="content"  class="container-fluid"  role="main">
+		 </div>
 	</div>
 
-     <!-- the content section is empty as we will fill it 
-            via javascript and templates -->
-      <div id="content"  class="container-fluid"  role="main">
-      </div>
+<script id="categories-template" type="text/x-handlebars-template">
+
+    {{#each category}}
+    <div class="row"> 
+            
+          <div class="caption">
+              <h3> {{name}} </h3>
+		<table class="table table-condensed">
+			<thead>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Image 1</th>
+				<th>Image 2</th>
+			</thead>
+			<tbody>
+			{{#each animals}}
+				<tr>
+				<td> {{name}} </td>
+				<td> {{description}} </td>
+				<td><img src={{image1}} class="img-thumbnail"/></td>
+				<td><img src={{image2}} class="img-thumbnail"/></td>
+				</tr>
+			{{/each}}
+			</tbody>
+		</table>
+          </div>
+    </div> <!-- / row -->
+
+    {{/each}}
+
+</script>
+
+
 
 </body>
